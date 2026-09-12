@@ -52,10 +52,10 @@ const alphabetize=list=>[...list].sort((a,b)=>a.name.localeCompare(b.name));
 function macroNumber(value){return Number.parseFloat(value)||0}
 function goalScore(meal){
   const calories=macroNumber(meal.cal),protein=macroNumber(meal.p),carbs=macroNumber(meal.c);
-  if(goal.value==='build-muscle')return protein*10+calories*.035;
-  if(goal.value==='body-recomposition')return protein*12-calories*.025;
-  if(goal.value==='everyday-energy')return protein*5+carbs*3+calories*.01;
-  if(goal.value==='lean-out')return protein*13-calories*.08;
+  if(goal.value==='muscle')return protein*10+calories*.035;
+  if(goal.value==='recomposition')return protein*12-calories*.025;
+  if(goal.value==='energy')return protein*5+carbs*3+calories*.01;
+  if(goal.value==='cut')return protein*13-calories*.08;
   return 0;
 }
 function rankForGoal(list){return goal.value==='all'?alphabetize(list):[...list].sort((a,b)=>goalScore(b)-goalScore(a)||a.name.localeCompare(b.name))}
