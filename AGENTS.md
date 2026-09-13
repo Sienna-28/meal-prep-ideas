@@ -19,7 +19,7 @@ After STOP 1, help the student propose and approve the six TARGET lines and one 
 
 ## My standing rule
 
-[One observable, student-approved rule that protects this project's purpose or experience.]
+Let a visitor select exactly one diet and one fitness goal at a time; show only meal cards that match both selections, and clearly tell them when no meals match.
 
 ## Workflow
 
